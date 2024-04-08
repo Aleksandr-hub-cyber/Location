@@ -17,6 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from . import views
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('submitData/', views.submit_data),
+    path('submitData/<int:id>/', views.get_data),
+    path('submitData/<int:id>/', views.update_data),
+    path('submitData/', views.get_data_by_user),
 ]

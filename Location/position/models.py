@@ -23,8 +23,6 @@ class Pass(models.Model):
 
 
 
-
-
 class PassManager(models.Manager):
 
     def create_pass(self, coordinates, elevation, name, photos, user_name, user_email, user_phone):
